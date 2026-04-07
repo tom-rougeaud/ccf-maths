@@ -1,0 +1,142 @@
+# Politique de confidentialité — Éditeur de CCF MathsXP
+
+**Version** : 1.0  
+**Date d'entrée en vigueur** : 2026  
+**Développeur** : Tom Rougeaud  
+**Contact** : [linkedin.com/in/tomrougeaud](https://www.linkedin.com/in/tomrougeaud/)
+
+---
+
+## 1. Présentation
+
+L'**Éditeur de CCF MathsXP** est un outil pédagogique numérique destiné aux professeurs de mathématiques en lycée professionnel français. Il permet de gérer les Contrôles en Cours de Formation (CCF) : grilles d'évaluation, convocations des élèves, corrections, fiches individuelles et bilans statistiques.
+
+---
+
+## 2. Données collectées
+
+### 2.1 Données renseignées par l'utilisateur
+
+L'application peut contenir les données personnelles suivantes, **saisies manuellement** par l'utilisateur :
+
+| Catégorie | Données |
+|-----------|---------|
+| Informations d'établissement | Nom, adresse, ville |
+| Informations enseignant | Nom et prénom de l'évaluateur, signature numérique |
+| Informations élèves | Nom et prénom des élèves, présence éventuelle d'un tiers-temps |
+| Données d'évaluation | Appréciations par question (0/1/2/3), notes calculées |
+| Données de planification | Dates et horaires des convocations, numéros de salles |
+
+### 2.2 Données NON collectées
+
+L'application **ne collecte pas** :
+- Aucune donnée d'identification nationale (numéro INE, date de naissance, adresse personnelle des élèves)
+- Aucune donnée de santé ou de situation familiale
+- Aucune donnée de navigation, cookies de traçage ou identifiants techniques
+- Aucune donnée de géolocalisation
+
+---
+
+## 3. Lieu de stockage des données
+
+**Toutes les données sont stockées exclusivement et localement** dans le navigateur web de l'utilisateur, via la technologie `localStorage` du navigateur.
+
+> ✅ **Aucune donnée n'est transmise à un serveur distant.**  
+> ✅ **Aucune donnée n'est partagée avec un tiers.**  
+> ✅ **Aucune base de données distante n'est utilisée.**
+
+L'application fonctionne intégralement **hors ligne** après chargement de la page. Seule la police de caractères (Google Fonts — Plus Jakarta Sans) est chargée depuis un serveur externe lors de la première utilisation avec connexion internet. Aucune donnée personnelle n'est transmise lors de ce chargement.
+
+---
+
+## 4. Durée de conservation
+
+Les données persistent dans le `localStorage` du navigateur jusqu'à :
+
+- **Suppression manuelle** des données via l'onglet "Sauvegarde" de l'application
+- **Vidage du cache** ou des données de navigation du navigateur par l'utilisateur
+- **Changement de navigateur** ou d'appareil (les données ne se synchronisent pas)
+
+**L'utilisateur est seul responsable de la durée de conservation** des données dans son navigateur.
+
+---
+
+## 5. Risques et responsabilité
+
+### 5.1 Risque de perte de données
+
+Les données stockées localement peuvent être **perdues définitivement** en cas de :
+- Suppression du cache du navigateur
+- Réinitialisation ou changement d'appareil
+- Désinstallation ou mise à jour importante du navigateur
+- Manipulation incorrecte (réinitialisation via l'onglet Sauvegarde)
+
+**Il est fortement recommandé d'effectuer des sauvegardes régulières** via la fonction d'export JSON disponible dans l'onglet "Sauvegarde" de l'application.
+
+### 5.2 Décharge de responsabilité
+
+Le développeur de l'outil se décharge de toute responsabilité en cas de perte de données résultant d'une mauvaise utilisation, d'une défaillance technique du navigateur ou de l'appareil, ou de toute autre cause indépendante de sa volonté.
+
+---
+
+## 6. Base légale (RGPD)
+
+Conformément au **Règlement Général sur la Protection des Données (RGPD — UE 2016/679)**, le traitement des données personnelles des élèves (noms, prénoms, résultats d'évaluation) repose sur la base légale de **l'exécution d'une mission d'intérêt public** (article 6.1.e du RGPD) dans le cadre de l'éducation nationale française.
+
+L'utilisateur (l'enseignant) agit en qualité de **responsable de traitement** pour les données personnelles des élèves qu'il saisit dans l'outil.
+
+---
+
+## 7. Droits des personnes concernées
+
+Conformément au RGPD et à la loi Informatique et Libertés, les élèves (ou leurs représentants légaux s'ils sont mineurs) disposent des droits suivants concernant leurs données personnelles :
+
+- **Droit d'accès** : obtenir une copie des données les concernant
+- **Droit de rectification** : faire corriger des données inexactes
+- **Droit à l'effacement** : demander la suppression de leurs données
+- **Droit d'opposition** : s'opposer au traitement
+
+Ces droits s'exercent auprès de **l'enseignant responsable du traitement**, qui peut y répondre directement via les fonctions de l'application (modification ou suppression des données dans l'onglet Classes).
+
+---
+
+## 8. Données des tiers-temps
+
+Les informations relatives au **tiers-temps** (aménagement de la durée des épreuves) sont des données à caractère **médical et administratif** couvertes par le secret professionnel. Leur traitement est strictement limité à la planification des épreuves CCF dans le cadre des obligations légales de l'enseignant. Ces données ne doivent pas être divulguées à des tiers non autorisés.
+
+---
+
+## 9. Sécurité
+
+Bien que les données soient stockées localement et ne transitent pas sur internet, il est recommandé à l'utilisateur de :
+
+- Ne pas utiliser l'application sur un appareil partagé sans session sécurisée
+- Verrouiller son appareil en quittant l'application
+- Chiffrer les fichiers de sauvegarde JSON exportés s'ils sont archivés dans un espace partagé
+- Ne pas héberger les fichiers de sauvegarde JSON sur des services cloud non sécurisés
+
+---
+
+## 10. Hébergement de l'application
+
+Si l'application est hébergée sur un serveur web (ex. GitHub Pages, Netlify, espace académique), **seul le fichier HTML est servi**. Aucune donnée personnelle n'est transmise au serveur d'hébergement lors de l'utilisation de l'application. Les logs du serveur peuvent enregistrer l'adresse IP des visiteurs conformément aux pratiques standard d'hébergement web.
+
+---
+
+## 11. Modifications de la politique de confidentialité
+
+Cette politique peut être mise à jour pour refléter les évolutions de l'application ou de la réglementation. La date de dernière mise à jour est indiquée en en-tête du document.
+
+---
+
+## 12. Contact
+
+Pour toute question relative à cette politique de confidentialité ou à l'exercice de vos droits :
+
+**Tom Rougeaud**  
+Professeur Maths-Sciences, Lycée Professionnel  
+LinkedIn : [linkedin.com/in/tomrougeaud](https://www.linkedin.com/in/tomrougeaud/)
+
+---
+
+*Ce document est conforme aux exigences du RGPD (UE 2016/679) et de la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés (modifiée).*
